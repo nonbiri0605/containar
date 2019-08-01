@@ -1,0 +1,6 @@
+[01-Aug-2019 08:13:22 UTC] PHP Warning:  phpinfo(): Invalid date.timezone value 'Tokyo/Asia', we selected the timezone 'UTC' for now. in /var/www/html/phpinfo.php on line 2
+[01-Aug-2019 08:25:31 UTC] PHP Warning:  phpinfo(): Invalid date.timezone value 'Tokyo/Asia', we selected the timezone 'UTC' for now. in /var/www/html/phpinfo.php on line 2
+[01-Aug-2019 08:25:33 UTC] PHP Warning:  phpinfo(): Invalid date.timezone value 'Tokyo/Asia', we selected the timezone 'UTC' for now. in /var/www/html/phpinfo.php on line 2
+[01-Aug-2019 08:25:38 UTC] PHP Warning:  phpinfo(): Invalid date.timezone value 'Tokyo/Asia', we selected the timezone 'UTC' for now. in /var/www/html/phpinfo.php on line 2
+[01-Aug-2019 08:26:06 UTC] PHP Warning:  phpinfo(): Invalid date.timezone value 'Tokyo/Asia', we selected the timezone 'UTC' for now. in /var/www/html/phpinfo.php on line 2
+[01-Aug-2019 08:26:07 UTC] PHP Warning:  phpinfo(): Invalid date.timezone value 'Tokyo/Asia', we selected the timezone 'UTC' for now. in /var/www/html/phpinfo.php on line 2
