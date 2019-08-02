@@ -7,6 +7,7 @@ RUN apt-get install -y vim
 
 # php module
  RUN apt-get install -y zlib1g-dev \
+   && apt-get install -y git \
    && apt-get install -y libzip* \
    && docker-php-ext-install zip
 
@@ -20,6 +21,3 @@ ENV PATH $PATH:/composer/vendor/bin
 
 WORKDIR /var/www/html
 RUN composer global require "laravel/installer"
-
-# laravel make test
-RUN laravel new test
