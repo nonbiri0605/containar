@@ -9,7 +9,7 @@ RUN apt-get install -y vim
  RUN apt-get install -y zlib1g-dev \
    && apt-get install -y git \
    && apt-get install -y libzip* \
-   && docker-php-ext-install zip
+   && docker-php-ext-install zip pdo_mysql mysqli mbstring
 
 # composer install
 RUN curl -s http://getcomposer.org/installer | php && \
