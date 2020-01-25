@@ -6,9 +6,10 @@ RUN apt-get update
 RUN apt-get install -y vim
 
 # php module
- RUN apt-get install -y zlib1g-dev \
+RUN apt-get install -y zlib1g-dev \
    && apt-get install -y git \
    && apt-get install -y libzip* \
+   && apt-get install -y libonig-dev \
    && docker-php-ext-install zip pdo_mysql mysqli mbstring
 
 # composer install
