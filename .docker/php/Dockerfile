@@ -19,13 +19,6 @@ RUN rm -r /var/lib/apt/lists/*
 RUN PHP_OPENSSL=yes docker-php-ext-configure imap --with-kerberos --with-imap-ssl \
     && docker-php-ext-install zip pdo_mysql mysqli mbstring imap
 
+
 # composer install
-RUN curl -s http://getcomposer.org/installer | php && \
-    mv composer.phar /usr/local/bin/composer
-
-ENV COMPOSER_ALLOW_SUPERUSER 1
-ENV COMPOSER_HOME /composer
-ENV PATH $PATH:/composer/vendor/bin
-
-WORKDIR /var/www/html
-RUN composer global require "laravel/installer"
+COPY --from=composer /usr/bin/composer /usr/bin/composer
