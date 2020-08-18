@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="TestSoapServer"
+                  xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+                  xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+    <xsd:complexType name="getMessage"/>
+    <wsdl:binding name="SOME_NAME" type="tns:FUNCTION_NAME">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+        <wsdl:operation name="ZDoSomething">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+</wsdl:definitions>
+
