@@ -17,6 +17,8 @@ RUN apt-get update && apt-get install -y \
    libzip* \
    libonig-dev \
    libc-client-dev \
+   libjpeg-dev \
+   libpng-dev \
    libwebp-dev \
    libopenjp2-7-dev \ 
    librsvg2-dev \
