@@ -44,5 +44,9 @@ services:
       - ./mysql/log/:/var/log/mysql
       - ./mysql/my.cnf:/etc/mysql/conf.d/my.cnf
     environment:
+      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=dashboardmanagement
+      - MYSQL_USER=test
+      - MYSQL_PASSWORD=test
       MYSQL_ROOT_PASSWORD: password
       TZ: Asia/Tokyo
